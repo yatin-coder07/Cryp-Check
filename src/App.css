@@ -1,0 +1,278 @@
+*{
+  box-sizing: border-box;
+}
+body , #root {
+  background: rgb(11, 11, 51);
+  width: 100%;
+  height:100%;
+  margin: 0;
+}
+.home{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(167, 170, 172);
+  width: 65%;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ 
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 43px;
+}
+.gradient-border{
+  background: linear-gradient(#131330 0 0) padding-box , linear-gradient(to right , transparent , #30bddc) border-box;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: padding-box,border-box;
+  border:double 1px transparent
+}
+.small-container{
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  padding: 18px;
+  justify-content: space-between;
+  align-items: stretch;
+
+
+}
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.input-wrapper{
+  align-items: center;
+  display: inline-flex;
+}
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  
+}
+.small-container .Name{
+  color: #9f9fc8;
+  font-weight: bold;
+  font-size: 18px;
+}
+.small-container .Value{
+  font-size: 23px;
+  color: rgb(214, 217, 219);
+  font-weight: medium;
+}
+
+.cards-list{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.card2-container{
+  padding: 20px;
+  background-color: #131330;
+  color: #9f9fc8;
+  background: linear-gradient(#070729 0 0) padding-box , linear-gradient(to top left, transparent , #30bddc) border-box;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: padding-box,border-box;
+  border:double 1px transparent;
+  margin: 10px;
+
+  max-width: 300px;
+  gap: 2cm;
+
+  
+}
+
+.card2-container h1{
+  font-weight: bold;
+  color: #ffff ;
+
+}
+.cards-description{
+  white-space: pre-wrap;
+}
+
+.footer-box{
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  text-align:center;
+  margin-top: 30px;
+}
+.footer-box .terms{
+  margin-right: 30px;
+ 
+}
+.footer-box .terms a{
+  color: #ffff;
+
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+.signup-modal-overlay {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-modal {
+  background: #131330;
+
+  border: solid, #30bddc ;
+ 
+  color: aliceblue;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.info input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.sign-up-login{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sign-up-login:hover {
+  background-color: #0056b3;
+}
+.title{
+  font-size: 40px;
+}
+.profile-container{
+  display: flex;
+  
+  justify-content: center;
+  margin-top: 150px;
+
+
+}
+.profile-card{
+  color: aliceblue;
+  border: solid, #30bddc ;
+  padding: 20px;
+  border-radius: 8px;
+  background: #18183c;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.social-links{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.social-links a{
+  color: #ffff;
+  transition: all 0.3s ease;
+  
+}
+.social-links a:hover{
+  color:#50d1ee ;
+  transform: translateY(-5px) scale(1.2); /* Scale up and lift the icon */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow to give the "pop" effect */
+  color: #0073e6;
+  
+  
+}
+.social-links .icons{
+ height: 40px;
+}
+.social-links .icons:hover{
+  height: 60px;
+ }
+.info h1{
+  background: linear-gradient(#32d9ff 0% , #83b2ff 100%);
+  font-weight: 1000;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 5px;
+  color: aliceblue;
+}
+.profile-card p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
