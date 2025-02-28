@@ -51,6 +51,7 @@ body{
  button.signUp{
   border-radius: 15px;
   margin-top: 0;
+  font-size: 15px;
    
    height: 50px;
   width: 90px;
@@ -81,6 +82,7 @@ button.signUp:hover{
 }
 .start{
   height: 80px;
+  font-size: 15px;
   width: 120px;
   border: none;
   background: linear-gradient(#30bddc 0% , #5189e1 100%);
@@ -141,19 +143,25 @@ button.signUp:hover{
   color:aliceblue;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.title h1{
+  font-size: 90px;
+  color: aliceblue;
 }
 .description1 h1{
 color: aliceblue;
-font-size: 35px;
+font-size: 40px;
 }
 .description2 h1{
   color: aliceblue;
-  font-size: 35px;
+  font-size: 40px;
   }
 .about-container .title{
   display: flex;
   justify-content: center;
+  
 }
 .home-button-container{
   display: flex;
@@ -161,6 +169,7 @@ font-size: 35px;
 }
 .home-button{
   text-align: center;
+  font-size: 20px;
   
   border-radius: 15px;
   margin-top: 0;
@@ -179,4 +188,9 @@ font-size: 35px;
   transition: 0.25s;}
   .terms-page{
     color: aliceblue;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
   }

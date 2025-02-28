@@ -5,7 +5,7 @@ function Footer(){
     return(
         <div className="footer-box">
             <div className="contact"><p>Contact info: <br></br>
-            7973650983</p>
+            Link at the Top</p>
            </div>
            <div className="email"> <p>Email: <br />
            yatins113@gmail.com</p></div>
